@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="25" unitdist="mil" unit="mil" style="dots" multiple="2" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -17828,12 +17828,12 @@ github.com/SkyNet3D/anet-board</text>
 <text x="445.77" y="64.77" size="1.778" layer="95">D 9</text>
 <text x="445.77" y="62.23" size="1.778" layer="95">D 8</text>
 <text x="445.77" y="148.59" size="1.778" layer="95">D 24</text>
-<text x="464.82" y="115.57" size="1.778" layer="95">Timer0A</text>
-<text x="464.82" y="118.11" size="1.778" layer="95">Timer0B</text>
-<text x="464.82" y="72.39" size="1.778" layer="95">Timer1B</text>
-<text x="464.82" y="74.93" size="1.778" layer="95">Timer1A</text>
-<text x="464.82" y="77.47" size="1.778" layer="95">Timer2B</text>
-<text x="464.82" y="80.01" size="1.778" layer="95">Timer2A</text>
+<text x="474.98" y="115.57" size="1.778" layer="95">Timer0A</text>
+<text x="474.98" y="118.11" size="1.778" layer="95">Timer0B</text>
+<text x="474.98" y="72.39" size="1.778" layer="95">Timer1B</text>
+<text x="474.98" y="74.93" size="1.778" layer="95">Timer1A</text>
+<text x="474.98" y="77.47" size="1.778" layer="95">Timer2B</text>
+<text x="474.98" y="80.01" size="1.778" layer="95">Timer2A</text>
 <text x="464.82" y="120.65" size="1.778" layer="95">MOSI</text>
 <text x="464.82" y="123.19" size="1.778" layer="95">MISO</text>
 <text x="464.82" y="125.73" size="1.778" layer="95">SCK</text>
@@ -17857,6 +17857,7 @@ github.com/SkyNet3D/anet-board</text>
 <text x="455.93" y="113.03" size="1.778" layer="95">INT2</text>
 <text x="455.93" y="69.85" size="1.778" layer="95">INT1</text>
 <text x="455.93" y="67.31" size="1.778" layer="95">INT0</text>
+<text x="464.82" y="118.11" size="1.778" layer="95">SS</text>
 </plain>
 <instances>
 <instance part="U8" gate="A" x="165.1" y="157.48"/>
