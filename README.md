@@ -1,4 +1,4 @@
-"# ANET-3D-Board-V1.0"
+## ANET-3D-Board-V1.0
 
 
 Only a traced circuit diagram of the ANET A6 / A8 board, hopefully error free.
