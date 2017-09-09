@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -17603,7 +17603,7 @@ by exp-lbrs.ulp</description>
 <part name="P+22" library="supply1" deviceset="+5V" device=""/>
 <part name="C21" library="rcl" deviceset="C-EU" device="C0805" value="10µ"/>
 <part name="GND57" library="SparkFun" deviceset="GND" device=""/>
-<part name="R31" library="ipc-7351-resistor" deviceset="RESISTOR_" device="0805" value="100k"/>
+<part name="R31" library="ipc-7351-resistor" deviceset="RESISTOR_" device="0805" value="20k"/>
 <part name="GND58" library="SparkFun" deviceset="GND" device=""/>
 <part name="P+23" library="supply1" deviceset="+5V" device=""/>
 <part name="+12V_VMOT2" library="supply1" deviceset="+12V" device="" value="+12V_VMOT"/>
