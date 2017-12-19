@@ -3477,24 +3477,24 @@ Low profile connectors, straight&lt;p&gt;
 <part name="LCD1" library="con-harting-ml" deviceset="ML10" device="" value="LCD"/>
 <part name="P+2" library="supply1" deviceset="+5V" device=""/>
 <part name="U$3" library="HD44780LCD" deviceset="LCD-HD44780" device="20X4-4HOLES" technology="4-HOLES" value="LCD-20x4"/>
-<part name="R2" library="rcl" deviceset="R-EU_" device="R0805"/>
-<part name="R3" library="rcl" deviceset="R-EU_" device="R0805"/>
-<part name="R4" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
+<part name="R2" library="rcl" deviceset="R-EU_" device="R0805" value="1k"/>
+<part name="R3" library="rcl" deviceset="R-EU_" device="R0805" value="4k7"/>
+<part name="R4" library="rcl" deviceset="R-EU_" device="R0805" value="1k"/>
 <part name="R5" library="rcl" deviceset="R-EU_" device="R0805" value="470"/>
-<part name="R6" library="rcl" deviceset="R-EU_" device="R0805" value="2k2"/>
-<part name="BACK" library="switch-omron" deviceset="40-XX" device=""/>
-<part name="MENU" library="switch-omron" deviceset="40-XX" device=""/>
-<part name="ENTER" library="switch-omron" deviceset="40-XX" device=""/>
+<part name="R6" library="rcl" deviceset="R-EU_" device="R0805" value="4k7"/>
+<part name="LEFT/BACK" library="switch-omron" deviceset="40-XX" device=""/>
+<part name="CENTER/MENU" library="switch-omron" deviceset="40-XX" device=""/>
+<part name="RIGHT/ENTER" library="switch-omron" deviceset="40-XX" device=""/>
 <part name="UP" library="switch-omron" deviceset="40-XX" device=""/>
 <part name="DOWN" library="switch-omron" deviceset="40-XX" device=""/>
-<part name="R1" library="rcl" deviceset="R-EU_" device="R0805" value="1k"/>
+<part name="R1" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
 <part name="GND1" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND2" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND5" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND7" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND8" library="SparkFun" deviceset="GND" device=""/>
 <part name="P+4" library="supply1" deviceset="+5V" device=""/>
-<part name="R8" library="rcl" deviceset="R-EU_" device="R0805" value="4k7"/>
+<part name="R8" library="rcl" deviceset="R-EU_" device="R0805" value="2k2"/>
 <part name="R7" library="rcl" deviceset="R-EU_" device="R0805" value="4k7"/>
 <part name="GND9" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND10" library="SparkFun" deviceset="GND" device=""/>
@@ -3504,9 +3504,7 @@ Low profile connectors, straight&lt;p&gt;
 <sheet>
 <plain>
 <text x="-10.16" y="27.94" size="3.048" layer="91" ratio="11">ANET3D LCD2004 Board Anet A8
-R.E. 2017/06</text>
-<text x="-10.16" y="17.78" size="3.048" layer="91" ratio="11">Tastenfunktion/Tastenanordnung prüfen
-Widerstandswerte prüfen</text>
+R.E. 2017/12</text>
 </plain>
 <instances>
 <instance part="GND44" gate="1" x="25.4" y="58.42"/>
@@ -3521,9 +3519,9 @@ Widerstandswerte prüfen</text>
 <instance part="R4" gate="G$1" x="91.44" y="68.58" rot="R180"/>
 <instance part="R5" gate="G$1" x="91.44" y="53.34" rot="R180"/>
 <instance part="R6" gate="G$1" x="91.44" y="83.82" rot="R180"/>
-<instance part="BACK" gate="1" x="104.14" y="53.34" rot="MR270"/>
-<instance part="MENU" gate="1" x="104.14" y="38.1" rot="MR270"/>
-<instance part="ENTER" gate="1" x="104.14" y="83.82" rot="MR270"/>
+<instance part="LEFT/BACK" gate="1" x="104.14" y="53.34" rot="MR270"/>
+<instance part="CENTER/MENU" gate="1" x="104.14" y="38.1" rot="MR270"/>
+<instance part="RIGHT/ENTER" gate="1" x="104.14" y="83.82" rot="MR270"/>
 <instance part="UP" gate="1" x="104.14" y="99.06" rot="MR270"/>
 <instance part="DOWN" gate="1" x="104.14" y="68.58" rot="MR270"/>
 <instance part="R1" gate="G$1" x="91.44" y="99.06" rot="R180"/>
@@ -3559,8 +3557,8 @@ Widerstandswerte prüfen</text>
 <junction x="109.22" y="66.04"/>
 </segment>
 <segment>
-<pinref part="BACK" gate="1" pin="P"/>
-<pinref part="BACK" gate="1" pin="P1"/>
+<pinref part="LEFT/BACK" gate="1" pin="P"/>
+<pinref part="LEFT/BACK" gate="1" pin="P1"/>
 <wire x1="109.22" y1="53.34" x2="109.22" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="GND2" gate="1" pin="GND"/>
 <wire x1="109.22" y1="50.8" x2="111.76" y2="50.8" width="0.1524" layer="91"/>
@@ -3568,17 +3566,17 @@ Widerstandswerte prüfen</text>
 </segment>
 <segment>
 <pinref part="GND5" gate="1" pin="GND"/>
-<pinref part="MENU" gate="1" pin="P1"/>
+<pinref part="CENTER/MENU" gate="1" pin="P1"/>
 <wire x1="111.76" y1="35.56" x2="109.22" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="MENU" gate="1" pin="P"/>
+<pinref part="CENTER/MENU" gate="1" pin="P"/>
 <wire x1="109.22" y1="35.56" x2="109.22" y2="38.1" width="0.1524" layer="91"/>
 <junction x="109.22" y="35.56"/>
 </segment>
 <segment>
 <pinref part="GND7" gate="1" pin="GND"/>
-<pinref part="ENTER" gate="1" pin="P1"/>
+<pinref part="RIGHT/ENTER" gate="1" pin="P1"/>
 <wire x1="111.76" y1="81.28" x2="109.22" y2="81.28" width="0.1524" layer="91"/>
-<pinref part="ENTER" gate="1" pin="P"/>
+<pinref part="RIGHT/ENTER" gate="1" pin="P"/>
 <wire x1="109.22" y1="81.28" x2="109.22" y2="83.82" width="0.1524" layer="91"/>
 <junction x="109.22" y="81.28"/>
 </segment>
@@ -3756,8 +3754,8 @@ Widerstandswerte prüfen</text>
 </net>
 <net name="N$4" class="0">
 <segment>
-<pinref part="BACK" gate="1" pin="S"/>
-<pinref part="BACK" gate="1" pin="S1"/>
+<pinref part="LEFT/BACK" gate="1" pin="S"/>
+<pinref part="LEFT/BACK" gate="1" pin="S1"/>
 <wire x1="99.06" y1="53.34" x2="99.06" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="R5" gate="G$1" pin="1"/>
 <wire x1="96.52" y1="53.34" x2="99.06" y2="53.34" width="0.1524" layer="91"/>
@@ -3766,8 +3764,8 @@ Widerstandswerte prüfen</text>
 </net>
 <net name="N$5" class="0">
 <segment>
-<pinref part="MENU" gate="1" pin="S"/>
-<pinref part="MENU" gate="1" pin="S1"/>
+<pinref part="CENTER/MENU" gate="1" pin="S"/>
+<pinref part="CENTER/MENU" gate="1" pin="S1"/>
 <wire x1="99.06" y1="38.1" x2="99.06" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="38.1" x2="99.06" y2="38.1" width="0.1524" layer="91"/>
 <junction x="99.06" y="38.1"/>
@@ -3776,8 +3774,8 @@ Widerstandswerte prüfen</text>
 </net>
 <net name="N$6" class="0">
 <segment>
-<pinref part="ENTER" gate="1" pin="S"/>
-<pinref part="ENTER" gate="1" pin="S1"/>
+<pinref part="RIGHT/ENTER" gate="1" pin="S"/>
+<pinref part="RIGHT/ENTER" gate="1" pin="S1"/>
 <wire x1="99.06" y1="83.82" x2="99.06" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="R6" gate="G$1" pin="1"/>
 <wire x1="96.52" y1="83.82" x2="99.06" y2="83.82" width="0.1524" layer="91"/>
